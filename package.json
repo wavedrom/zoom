@@ -1,0 +1,39 @@
+{
+  "name": "zoom",
+  "version": "0.1.0",
+  "description": "[zoom](https://github.com/wavedrom/zoom) is a Waveform viewer implemented in JavaScript. It designed to fit your application and be extended with new functionality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint lib/",
+    "build": "mkdir -p build/ && cp src/index.html build/ && browserify src/app.js > build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wavedrom/zoom.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wavedrom/zoom/issues"
+  },
+  "homepage": "https://github.com/wavedrom/zoom#readme",
+  "devDependencies": {
+    "@drom/eslint-config": "*",
+    "browserify": "^16.2.3",
+    "eslint": "^5.11.0",
+    "nyc": "^13.1.0"
+  },
+  "eslintConfig": {
+    "extends": "@drom/eslint-config/eslint4/node4",
+    "rules": {
+      "indent": [
+        1,
+        2
+      ],
+      "no-console": 1
+    },
+    "parserOptions": {
+      "ecmaVersion": 2017
+    }
+  }
+}
