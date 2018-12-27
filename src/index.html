@@ -9,20 +9,80 @@
     padding: 0;
     margin: 0;
   }
-  #container {
-    /* height: 100%;
-    margin: 0;
-    display: flex;
-    background: black; */
+  #demo-container {
+    height: 100%;
+    /* margin: 0; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: 20px 1fr 20px;
+    /* background: black; */
   }
-  #icedrom {
-    margin: auto;
+  #demo-top {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #222;
+  }
+  #demo-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: #333;
+  }
+  #demo-right {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: #333;
+  }
+  #demo-bot {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background: #222;
+  }
+  #zoom {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    z-index: 400;
+  }
+  #zoom-tile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -100;
+    overflow: hidden;
+    /* display: block; */
+  }
+  .zoom-pane {
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
   }
   </style>
 </head>
 <body>
-  <div id="container">
-    <div id="zoom"></div>
+  <div id="demo-container">
+    <div id="demo-top"></div>
+    <div id="demo-left"></div>
+    <div id="zoom">
+      <div class="zoom-pane" id="zoom-pane">
+        <div id="zoom-tile"></div>
+      </div>
+    </div>
+    <div id="demo-right"></div>
+    <div id="demo-bot"></div>
   </div>
   <script src="app.js"></script>
 </body>

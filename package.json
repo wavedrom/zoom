@@ -21,7 +21,8 @@
     "@drom/eslint-config": "*",
     "browserify": "^16.2.3",
     "eslint": "^5.11.0",
-    "nyc": "^13.1.0"
+    "nyc": "^13.1.0",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node4",
