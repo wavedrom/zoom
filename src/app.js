@@ -62,6 +62,14 @@ eZoom.addEventListener('wheel', e => {
   console.log(e.deltaX, e.deltaY);
 });
 
+document.addEventListener('keydown', event => {
+  console.log('down ' + event.key);
+});
+
+document.addEventListener('keyup', event => {
+  console.log('up ' + event.key);
+});
+
 eZoom.appendChild(cnvs);
 
 
