@@ -11,30 +11,20 @@
     "type": "git",
     "url": "git+https://github.com/wavedrom/zoom.git"
   },
-  "author": "",
+  "author": "Aliaksei Chapyzhenka",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wavedrom/zoom/issues"
   },
   "homepage": "https://github.com/wavedrom/zoom#readme",
   "devDependencies": {
-    "@drom/eslint-config": "*",
+    "@drom/eslint-config": "^0.10.0",
     "browserify": "^16.2.3",
-    "eslint": "^5.11.0",
-    "nyc": "^13.1.0",
+    "eslint": "^5.16.0",
+    "nyc": "^14.1.1",
     "resize-observer-polyfill": "^1.5.1"
   },
   "eslintConfig": {
-    "extends": "@drom/eslint-config/eslint4/node4",
-    "rules": {
-      "indent": [
-        1,
-        2
-      ],
-      "no-console": 1
-    },
-    "parserOptions": {
-      "ecmaVersion": 2017
-    }
+    "extends": "@drom/eslint-config/eslint4/node8"
   }
 }
