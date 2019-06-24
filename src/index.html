@@ -61,15 +61,23 @@
     left: 0;
     top: 0;
     z-index: -100;
-    overflow: hidden;
+    /* overflow: visible; */
+     /* hidden; */
+    scroll-behavior: smooth;
     /* display: block; */
   }
-  .zoom-pane {
+  .transition {
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
   }
+  /* .notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  } */
   </style>
 </head>
 <body>
