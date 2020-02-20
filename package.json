@@ -1,6 +1,6 @@
 {
   "name": "wzoom",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "[zoom](https://github.com/wavedrom/zoom) is a Waveform viewer implemented in JavaScript. It designed to fit your application and be extended with new functionality.",
   "main": "lib/index.js",
   "scripts": {
