@@ -5,11 +5,14 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "eslint lib/",
-    "build": "mkdir -p build/ && cp src/index.html build/ && browserify src/app.js > build/app.js"
+    "demo": "mkdir -p demo/ && cp src/index.html demo/ && browserify src/app.js > demo/app.js",
+    "browserify": "browserify --standalone wzoom lib/index.js > build/wzoom.js",
+    "prepublish": "npm run test && mkdir -p build && npm run browserify"
   },
   "unpkg": "lib/index.js",
   "files": [
-    "lib/"
+    "build/wzoom.js",
+    "lib/*"
   ],
   "repository": {
     "type": "git",
