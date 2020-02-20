@@ -9,7 +9,7 @@
     "browserify": "browserify --standalone wzoom lib/index.js > build/wzoom.js",
     "prepublish": "npm run test && mkdir -p build && npm run browserify"
   },
-  "unpkg": "lib/index.js",
+  "unpkg": "build/wzoom.js",
   "files": [
     "build/wzoom.js",
     "lib/*"
